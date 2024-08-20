@@ -1,0 +1,19 @@
+; define glfw externals
+extern __imp__glfwInit
+extern __imp__glfwCreateWindow
+extern __imp__glfwTerminate
+extern __imp__glfwMakeContextCurrent
+extern __imp__glfwWindowShouldClose
+extern __imp__glfwSwapBuffers
+extern __imp__glfwPollEvents
+extern __imp__glfwDestroyWindow
+
+; Define macros for easier use
+%define glfwInit __imp__glfwInit
+%define glfwCreateWindow __imp__glfwCreateWindow
+%define glfwTerminate __imp__glfwTerminate
+%define glfwMakeContextCurrent __imp__glfwMakeContextCurrent
+%define glfwWindowShouldClose __imp__glfwWindowShouldClose
+%define glfwSwapBuffers __imp__glfwSwapBuffers
+%define glfwPollEvents __imp__glfwPollEvents
+%define glfwDestroyWindow __imp__glfwDestroyWindow
