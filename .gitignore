@@ -2,3 +2,5 @@ obj/*
 *.exe
 *.dll
 *.lst
+*.pdg
+*.ilk

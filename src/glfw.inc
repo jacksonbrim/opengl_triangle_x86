@@ -7,6 +7,7 @@ extern __imp__glfwWindowShouldClose
 extern __imp__glfwSwapBuffers
 extern __imp__glfwPollEvents
 extern __imp__glfwDestroyWindow
+extern __imp__glfwSetKeyCallback
 
 ; Define macros for easier use
 %define glfwInit __imp__glfwInit
@@ -17,3 +18,4 @@ extern __imp__glfwDestroyWindow
 %define glfwSwapBuffers __imp__glfwSwapBuffers
 %define glfwPollEvents __imp__glfwPollEvents
 %define glfwDestroyWindow __imp__glfwDestroyWindow
+%define glfwSetKeyCallback __imp__glfwSetKeyCallback
